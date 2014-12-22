@@ -1,0 +1,28 @@
+{
+  "name": "milkcocoa-cli",
+  "version": "0.0.3",
+  "description": "milkcocoa's cli tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "milkcocoa",
+    "GoogleSpreadSheet"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:n0bisuke/milkcocoa-cli.git"
+  },
+  "author": "n0bisuke",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "milkcocoa-cli": "bin/mlkcca-cli"
+  },
+  "dependencies": {
+    "prompt": "^0.2.14",
+    "socket.io-client": "^1.0.6"
+  }
+}
