@@ -18,10 +18,15 @@ module.exports = function (info){
 	query.limit(limit);
 
 	//sort();
-	if(!process.argv[4] || process.argv[4] === 'asc'){
-		query.sort('asc');
-	}else if(process.argv[4] === 'desc'){
+	if(!process.argv[4] || process.argv[4] === 'desc'){
 		query.sort('desc');
+	}else{
+		query.sort('asc');
+	}
+
+	//skip
+	if(!process.argv[5]){
+		query.skip(process.argv[5]);
 	}
 
 	//done();
